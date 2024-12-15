@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff00ff, #00ffff);
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1, h2 {
+            margin: 10px 0;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            border: 5px solid #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Here will be your meme!</h1>
+        <h2>Wait, it is arriving!</h2>
+        <p><img src="{{meme_pic}}" alt="Meme Image"></p>
+        <p>Current subreddit: {{subreddit}}</p>
+    </div>
+</body>
+</html>
+
